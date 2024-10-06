@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/sign.css">
+    <title>Sign In</title>
+
+    <style>
+
+      .auth-buttons a, .auth-buttons button {
+          margin-left: 10px;
+          padding: 8px 15px;
+          background-color: #747474;
+          color: white;
+          border: none;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 16px; 
+          font-family: Arial, sans-serif; 
+      }
+
+      .auth-buttons a:hover, .auth-buttons button:hover {
+          background-color: #313131;
+      }
+
+    </style>
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="H:\My folders\SLIIT\1st Year\IWT\Assignment\Web Page\indexImages\logo-search-grid-1x.png" alt="Logo" width="50" height="50">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="auth-buttons">
+            <a href="sign_in.html">Sign In</a>
+            <button>Log In</button>
+        </div>
+    </nav>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="textile.html">Textile</a>
+        <a href="garment.html">Garment</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+
+    <div class="signin">
+      <h1>Sign In</h1>
+      <div>
+          <form id="myForm" method="POST" action="process_sign_in.php">
+              <label for="f_name">First Name:</label>
+              <input type="text" name="Ufname" id="f_n" required>
+  
+              <label for="l_name">Last Name:</label>
+              <input type="text" name="Ulname" required>
+  
+              <label for="email">E-mail:</label>
+              <input type="email" name="Uemail" required>
+  
+              <label for="c_no">Contact Number:</label>
+              <input type="tel" name="Ucno" required>
+  
+              <label for="password">Create Password:</label>
+              <input type="password" class="password" name="Upword" required>
+  
+              <label for="c_password">Confirm Password:</label>
+              <input type="password" class="c_password" name="Ucpword" required>
+  
+              <button class="btn" type="submit">SUBMIT</button>
+          </form>
+      </div>
+      <p>Already have an account? <a href="#">Login</a></p>
+  </div>
+  
+  <!-- Optional Modal for Popup -->
+  <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Sign In Successful!</p>
+      </div>
+  </div>
+  
+  <script>
+  // Optional: Modal Popup Script
+  var modal = document.getElementById("myModal");
+  var btn = document.querySelector(".btn");
+  var span = document.getElementsByClassName("close")[0];
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
+    <footer>
+        <div class="footer-container">
+          
+          <!-- Logo Section -->
+          <div class="footer-logo">
+            <img src="H:\My folders\SLIIT\1st Year\IWT\Assignment\Web Page\indexImages\logo-search-grid-1x.png" alt="Logo" width="50" height="50">
+          </div>
+          
+          <!-- Navigation Links -->
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          
+          <!-- Social Media Links -->
+          <div class="footer-social">
+            <p>Follow Us On:</p>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Google</a></li>
+              <li><a href="#">Telegram</a></li>
+            </ul>
+          </div>
+          
+          <!-- Location Section -->
+          <div class="footer-location">
+            <p>Our Location:</p>
+            <address>
+              123 Celylon textile & Garment,<br>
+              Colombo,<br>
+              Sri Lanka
+            </address>
+          </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

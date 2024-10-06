@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textiles</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            max-width: 800px; /* Restrict the max width of sections */
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #302252;
+            color: white;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .search-bar input {
+            width: 300px;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .auth-buttons a, .auth-buttons button {
+          margin-left: 10px;
+          padding: 8px 15px;
+          background-color: #747474;
+          color: white;
+          border: none;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-family: Arial, sans-serif; 
+        }
+
+        .auth-buttons a:hover, .auth-buttons button:hover {
+            background-color: #313131;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(163, 151, 151, 0.8);
+            padding: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 5px;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #302252;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        .footer-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .footer-nav ul,
+        .footer-social ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-nav ul li,
+        .footer-social ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-nav ul li a,
+        .footer-social ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-social p {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer-location {
+            max-width: 200px;
+        }
+
+        .footer-location address {
+            line-height: 1.6;
+        }
+
+        /* Responsive Design for Footer */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-logo,
+            .footer-nav,
+            .footer-social,
+            .footer-location {
+                margin-bottom: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .nav-links a {
+                padding: 10px 15px; /* Adjust padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="H:/My folders/SLIIT/1st Year/IWT/Assignment/Web Page/indexImages/logo-search-grid-1x.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="auth-buttons">
+            <a href="sign_in.html">Sign In</a>
+            <button>Log In</button>
+        </div>
+    </nav>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="textile.html">Textile</a>
+        <a href="garment.html">Garment</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+
+    <!-- Content Sections -->
+    <section id="men">
+        <h2>Men's Wear</h2>
+        <p>Discover our range of men's fabrics, including high-quality cottons, wools, and blends. Perfect for suits, casual wear, and more!</p>
+        <p>Whether you're looking for vibrant prints or classic styles, we have something for every man.</p>
+        <a href="php/men.php" class="button">Explore Now</a>
+    </section>
+
+    <section id="women">
+        <h2>Women's Wear</h2>
+        <p>Explore our selection of women's fabrics, featuring elegant silks, soft linens, and fashionable prints. Ideal for dresses, blouses, and accessories.</p>
+        <p>Find the perfect fabric to express your style and creativity!</p>
+        <a href="php/women.php" class="button">Explore Now</a>
+    </section>
+
+    <section id="child">
+        <h2>Child's Wear</h2>
+        <p>Shop our delightful range of children's fabrics, from playful prints to cozy materials. Perfect for making comfortable clothes and fun projects.</p>
+        <p>Let your creativity shine with our vibrant selections designed for kids!</p>
+        <a href="php/child.php" class="button">Explore Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-logo">
+                <img src="H:/My folders/SLIIT/1st Year/IWT/Assignment/Web Page/indexImages/logo-search-grid-1x.png" alt="Logo">
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Branches</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <p>Follow Us On:</p>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Telegram</a></li>
+                </ul>
+            </div>
+
+            <!-- Location Section -->
+            <div class="footer-location">
+                <p>Our Location:</p>
+                <address>
+                    123 Ceylon Textile & Garment,<br>
+                    Colombo,<br>
+                    Sri Lanka
+                </address>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
